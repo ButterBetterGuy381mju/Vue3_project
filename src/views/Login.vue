@@ -1,19 +1,33 @@
 <template>
-    <div class="login-container">
-      <h1>Login</h1>
-      <form @submit="login" class="login-form">
-        <div class="input-container">
-          <label for="username">Username:</label>
-          <input v-model="username" type="text" id="username" required>
-        </div>
-        <div class="input-container">
-          <label for="password">Password:</label>
-          <input v-model="password" type="password" id="password" required>
-        </div>
-        <button type="submit" class="login-button">Login</button>
-      </form>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form @submit="login" class="login-form">
+      <div class="input-container">
+        <label for="username">Username:</label>
+        <input v-model="username" type="text" id="username" required>
+      </div>
+      <div class="input-container">
+        <label for="password">Password:</label>
+        <input v-model="password" type="password" id="password" required>
+      </div>
+      <button type="submit" class="login-button">Login</button>
+    </form>
+    <!-- เพิ่มปุ่ม Register และลิงค์ไปยังหน้า Register -->
+    <div class="register-link">
+      <p>Don't have an account? <router-link to="/register">Register</router-link></p>
     </div>
-  </template>
+  </div>
+</template>
+<!-- สร้าง route สำหรับหน้า Register ในส่วน script -->
+<script>
+export default {
+  methods: {
+    login() {
+      // เพิ่มโค้ดสำหรับการเข้าสู่ระบบที่นี่
+    },
+  },
+};
+</script>
   <style scoped>
   .login-container {
     display: flex;

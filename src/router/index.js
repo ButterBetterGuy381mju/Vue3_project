@@ -7,6 +7,7 @@ import product_detail from '../views/product_detail.vue'
 //หน้าตะกร้าสินค้า
 import cart_cart from '../views/cart_cart.vue'
 import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/register', // เพิ่มเส้นทางสำหรับหน้า Register
+    name: 'Register',
+    component: Register
   },
 ]
 
